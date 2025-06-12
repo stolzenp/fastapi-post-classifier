@@ -1,0 +1,43 @@
+# === Python bytecode and cache ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# === Virtual environments ===
+.venv/
+env/
+venv/
+.uv/
+
+# === Testing and coverage ===
+.coverage
+coverage.xml
+htmlcov/
+.cache/
+pytest_cache/
+
+# === Environment variables and secrets ===
+.env
+.env.*
+
+# === IDE ===
+.vscode/
+.idea/
+
+# === macOS / Windows ===
+.DS_Store
+Thumbs.db
+
+# === Docker ===
+*.log
+docker-compose.override.yml
+docker-compose.*.yml
+Dockerfile.*
+dockerfiles/
+tmp/
+**/tmp/
+
+# Docker volumes (if mounted locally)
+volumes/
+data/
