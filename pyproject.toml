@@ -1,0 +1,23 @@
+[tool.black]
+line-length = 120
+target-version = ['py312']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.venv
+  | __pycache__
+  | build
+  | dist
+)/
+'''
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+exclude = [".venv", "build", "dist"]
+lint.select = [
+  "E", "F", "I", "UP", "B", "C90", "N"
+]
+lint.fixable = ["ALL"]
+lint.unfixable = []
