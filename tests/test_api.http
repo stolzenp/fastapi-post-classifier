@@ -1,0 +1,7 @@
+### Test POST /predict
+POST http://127.0.0.1:8000/predict
+Content-Type: application/json
+
+{
+    "text":  "This is an awesome Instagram post"
+}
