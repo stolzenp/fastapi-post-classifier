@@ -113,3 +113,6 @@ make coverage
 
 - There are no pre-processing steps, but these could be added later or delegated to another service.
 - The class labels are hardcoded for simplicity but can be easily extended.
+
+## Potential Improvements
+- Incorporating Terraform as an Infrastructure as Code (IaC) tool could significantly improve infrastructure management. By codifying cloud resources (such as storage accounts, virtual machines, and Kubernetes)
