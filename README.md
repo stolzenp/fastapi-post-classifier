@@ -116,4 +116,5 @@ make coverage
 
 ## Potential Improvements
 - Incorporating Terraform as an Infrastructure as Code (IaC) tool could significantly improve infrastructure management. For example, by codifying cloud resources (such as storage accounts, virtual machines, and Kubernetes).
-- Integrate Azure Application Insights or a similar SDK to enable detailed monitoring, error tracking, and performance insights for the microservice. 
+- Integrate Azure Application Insights or a similar SDK to enable detailed monitoring, error tracking, and performance insights for the microservice.
+- Implement a GitHub Actions workflow to automate testing and ensure code quality on each push or pull request.
