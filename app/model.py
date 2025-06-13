@@ -1,16 +1,13 @@
+from pathlib import Path
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as f
 
-DUMMY_TOPICS = [
-    "Soccer",
-    "Food",
-    "Stockmarket",
-    "Yoga",
-    "Beauty",
-    "Politics",
-    "Technology",
-]
+from .utils import load_config
+
+config = load_config(str(Path(__file__).resolve().parent.parent / "config.yaml"))
+DUMMY_TOPICS = config["topics"]
 
 
 class DummyClassifier(nn.Module):
@@ -33,7 +30,7 @@ class DummyClassifier(nn.Module):
 
     def forward(self, text: str) -> torch.Tensor:
         """
-        Forward pass of that generates random topic probabilities for input text.
+        Forward pass that generates random topic probabilities for input text.
 
         Args:
             text (str): Input text (never used).

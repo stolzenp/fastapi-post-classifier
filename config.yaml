@@ -1,0 +1,17 @@
+topics:
+  - Soccer
+  - Food
+  - Stockmarket
+  - Yoga
+  - Beauty
+  - Politics
+  - Technology
+
+example_probabilities:
+  Soccer: 0.032
+  Food: 0.172
+  Stockmarket: 0.048
+  Yoga: 0.138
+  Beauty: 0.264
+  Politics: 0.100
+  Technology: 0.246

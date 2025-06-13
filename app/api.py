@@ -1,17 +1,13 @@
+from pathlib import Path
+
 from fastapi import FastAPI
 from pydantic import BaseModel, Field, RootModel
 
 from .model import DummyClassifier, probs_to_dict
+from .utils import load_config
 
-EXAMPLE_PROBABILITIES = {
-    "Soccer": 0.032,
-    "Food": 0.172,
-    "Stockmarket": 0.048,
-    "Yoga": 0.138,
-    "Beauty": 0.264,
-    "Politics": 0.100,
-    "Technology": 0.246,
-}
+config = load_config(str(Path(__file__).resolve().parent.parent / "config.yaml"))
+EXAMPLE_PROBABILITIES = config["example_probabilities"]
 
 app = FastAPI()
 
